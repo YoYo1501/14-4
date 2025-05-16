@@ -12,6 +12,7 @@ router
   .get(authenticateJWT, UserController.GetById)
   .put(authenticateJWT, UserController.Update)
   .delete(authenticateJWT, UserController.Delete);
+  
 
 router.route("/email").post(UserController.SendEmail);
 router.route("/forgot-pasword").post(UserController.ForgotPassword)
